@@ -120,6 +120,7 @@ jobs:
           COPY --from=builder /app/package*.json ./
           COPY --from=builder /app/src ./src
           COPY --from=builder /app/db ./db
+          COPY --from=builder /app/extra ./extra
           EXPOSE 3001
           CMD ["node", "server/server.js"]
           EOF
