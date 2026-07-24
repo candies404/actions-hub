@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: 设置仓库
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: louislam/uptime-kuma
           path: uptime-kuma
@@ -85,7 +85,7 @@ jobs:
     
     steps:
       - name: 设置指定版本仓库
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: louislam/uptime-kuma
           path: uptime-kuma
